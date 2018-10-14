@@ -41,8 +41,11 @@ console.log(generateTrafficLight());
     @example generateRandomPhoneNumber(); // "1-718-786-2825"
 */
 //SOLUTION #2
-
-
+const generateRandomPhoneNumber = () => {
+    let phoneNum = `${1}-${generateRandomNumberFromRange(0,999)}-${generateRandomNumberFromRange(0,999)}-${generateRandomNumberFromRange(0,9999)}`
+    return phoneNum
+}
+console.log(generateRandomPhoneNumber());
 
 /*
     @func generateRandomRGB
@@ -54,6 +57,7 @@ console.log(generateTrafficLight());
     
     @example generateRandomRGB(); // "rgb(255, 123, 0)"
 */
+// SOLUTION #2
 
 /*
     @func generateLottoTicket
@@ -67,6 +71,12 @@ console.log(generateTrafficLight());
     
     @example generateLottoTicket(); // L 9 11-28
 */
+// SOLUTION #4
+const generateLottoTicket = () => {
+    let winningNum = `${generateRandomNumberFromRange(0,9)}-${generateRandomNumberFromRange(0,15)}-${generateRandomNumberFromRange(0,30)}`
+    return winningNum
+}
+console.log(generateLottoTicket());
 
 /*
     @func generatePhoneNumberWithAreaCode
