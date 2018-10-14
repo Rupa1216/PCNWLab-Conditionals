@@ -58,7 +58,13 @@ console.log(generateRandomPhoneNumber());
     @example generateRandomRGB(); // "rgb(255, 123, 0)"
 */
 // SOLUTION #2
-
+const generateRandomRGB = () => {
+    let colorR = generateRandomNumberFromRange(0,255);
+    let colorG = generateRandomNumberFromRange(0,255);
+    let colorB = generateRandomNumberFromRange(0,255);
+    return `${colorR}, ${colorG}, ${colorB}`;
+}
+console.log(generateRandomRGB());
 /*
     @func generateLottoTicket
     @returns {string}
